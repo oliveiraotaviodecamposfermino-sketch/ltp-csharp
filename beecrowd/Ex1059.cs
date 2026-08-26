@@ -1,3 +1,4 @@
+// Beecrowd 1059 - Números pares até 100: exibe todos os números pares de 2 a 100.
 using System;
 
 class Ex1059
