@@ -1,3 +1,4 @@
+// Beecrowd 1002 - Área do círculo: calcula a área a partir do raio informado.
 using System;
 
 class Ex1002
