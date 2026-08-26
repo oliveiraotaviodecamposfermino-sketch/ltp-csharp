@@ -1,4 +1,5 @@
-﻿using System;
+// Gera um vetor com N números aleatórios (1 a 99), exibe os valores e calcula a soma dos elementos.
+using System;
 
 class Ex1
 {

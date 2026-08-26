@@ -1,3 +1,4 @@
+// Beecrowd 1064 - Média dos valores positivos: lê 6 números e calcula a média apenas dos positivos.
 using System;
 
 class Ex1064

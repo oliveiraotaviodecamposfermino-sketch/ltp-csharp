@@ -1,4 +1,5 @@
-﻿using System;
+// Calcula a média final de um aluno a partir da nota regular e da nota da prova final (peso 1 e 2).
+using System;
 
 class Exemplo2_Aula
 {

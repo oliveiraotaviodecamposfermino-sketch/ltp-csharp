@@ -1,4 +1,5 @@
-﻿using System;
+// Exemplo de manipulação de vetores: geração, leitura manual e exibição de dados.
+using System;
 
 class Exemplo1_Aulas
 {

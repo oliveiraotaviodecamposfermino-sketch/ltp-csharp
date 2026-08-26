@@ -1,4 +1,5 @@
-﻿using System;
+// Lê uma sequência de 50 bases de DNA (A, T, C, G) e monta a fita complementar correspondente.
+using System;
 
 class Ex9
 {
