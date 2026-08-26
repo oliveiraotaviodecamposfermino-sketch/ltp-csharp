@@ -7,7 +7,7 @@ Repositório com os exercícios e materiais de aula desenvolvidos na disciplina 
 Aqui ficam guardados os códigos em C# produzidos ao longo da disciplina, incluindo:
 
 - Exercícios resolvidos na plataforma [beecrowd](https://www.beecrowd.com.br/)
-- Exemplos e atividades trabalhadas em aula
+- Exemplos e atividades desenvolvidos em sala de aula e realizados em casa.
 
 ## Estrutura
 
