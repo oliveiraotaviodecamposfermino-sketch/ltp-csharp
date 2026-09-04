@@ -15,6 +15,7 @@ Aqui ficam guardados os códigos em C# produzidos ao longo da disciplina, inclui
 |---|---|
 | `beecrowd/` | Exercícios numerados resolvidos na plataforma beecrowd |
 | `exercicios-aula/` | Atividades e exemplos propostos em aula |
+| `Lista_de_Exercicios-02/` | Exercícios da Lista 2 |
 
 ## Tecnologias
 
