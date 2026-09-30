@@ -6,3 +6,4 @@ obj/
 .vscode/
 Thumbs.db
 .DS_Store
+.csproj
