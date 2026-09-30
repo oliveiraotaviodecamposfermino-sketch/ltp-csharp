@@ -1,4 +1,5 @@
 using System;
+using BibliotecaMatriz;
 
 class Ex2
 {
@@ -24,4 +25,19 @@ class Ex2
            return menorvalor;
 
         }
+
+     static void Main()
+    {
+        Console.WriteLine("Número de linhas da matriz: ");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("Número de colunas da matriz: ");
+        int m = int.Parse(Console.ReadLine());
+
+        int[,] matriz = new int[n, m];
+        Matriz.gerarMatriz(matriz);
+        Matriz.mostrarMatriz(matriz);
+
+        int menor = menorValor(matriz);
+        Console.WriteLine($"O menor valor da matriz é: {menor}");
+    }
 }

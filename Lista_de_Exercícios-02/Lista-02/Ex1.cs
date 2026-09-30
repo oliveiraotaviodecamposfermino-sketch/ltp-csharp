@@ -1,4 +1,5 @@
 using System;
+using BibliotecaMatriz;
 
 class Ex1
 {
@@ -24,4 +25,19 @@ class Ex1
            return maiorvalor;
 
         }
+
+    static void Main()
+    {
+        Console.WriteLine("Número de linhas da matriz: ");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("Número de colunas da matriz: ");
+        int m = int.Parse(Console.ReadLine());
+
+        int[,] matriz = new int[n, m];
+        Matriz.gerarMatriz(matriz);
+        Matriz.mostrarMatriz(matriz);
+
+        int maior = maiorValor(matriz);
+        Console.WriteLine($"O maior valor da matriz é: {maior}");
+    }
 }
