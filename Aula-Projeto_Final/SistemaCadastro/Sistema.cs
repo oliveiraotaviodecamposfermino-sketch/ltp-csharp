@@ -13,6 +13,7 @@ namespace SistemaCadastro
 {
     public partial class Sistema : Form
     {
+        int idAlterar;
 
         public Sistema()
         {
@@ -67,6 +68,10 @@ namespace SistemaCadastro
             cbGenero.DataSource = tabelaDados;
             cbGenero.DisplayMember = "genero";
             cbGenero.ValueMember = "idgenero";
+
+            cbAlteraGenero.DataSource = tabelaDados;
+            cbAlteraGenero.DisplayMember = "genero";
+            cbAlteraGenero.ValueMember = "idgenero";
         }
 
 
@@ -102,19 +107,44 @@ namespace SistemaCadastro
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            
+            int linha = dgBandas.CurrentRow.Index;// pega a linha selecionada
+            idAlterar = Convert.ToInt32(
+                dgBandas.Rows[linha].Cells["idbandas"].Value.ToString());
+            txtAlteraNome.Text = 
+                dgBandas.Rows[linha].Cells["nome"].Value.ToString();
+            txtAlteraIntegrantes.Text =
+                dgBandas.Rows[linha].Cells["integrantes"].Value.ToString();
+            txtAlteraRanking.Text =
+                dgBandas.Rows[linha].Cells["ranking"].Value.ToString();
+            cbAlteraGenero.Text =
+                dgBandas.Rows[linha].Cells["genero"].Value.ToString();
+            tabControl1.SelectedTab = tabAlterar; // muda aba 
         }
 
          private void btnConfirmaAlteracao_Click(object sender, EventArgs e)
         {
-           
+            ConectaBanco con = new ConectaBanco();
+            Banda novaBanda = new Banda();
+            novaBanda.Nome = txtAlteraNome.Text;
+            novaBanda.Integrantes = Convert.ToInt32(txtAlteraIntegrantes.Text);
+            novaBanda.Ranking = Convert.ToInt32(txtAlteraRanking.Text);
+            novaBanda.Genero = Convert.ToInt32(cbAlteraGenero.SelectedValue.ToString());
+            bool retorno = con.alteraBanda(novaBanda, idAlterar);
+            if (retorno == false)
+                MessageBox.Show(con.mensagem);
+            else
+                MessageBox.Show("Banda alterada com sucesso!");
 
+            lista_gridBandas();
 
         }
 
         private void bntAddGenero_Click(object sender, EventArgs e)
         {
-          
+            FrmAddGenero formGenero = new FrmAddGenero();
+            this.Hide();
+            formGenero.ShowDialog();
+            this.Close();
         }
 
         void limpaCampos()
@@ -141,6 +171,11 @@ namespace SistemaCadastro
             
             limpaCampos();
             lista_gridBandas();
+
+        }
+
+        private void txtAlteraNome_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

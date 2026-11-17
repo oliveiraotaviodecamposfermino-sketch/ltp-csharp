@@ -106,6 +106,82 @@ namespace SistemaCadastro
             }
         }// fim deletaBanda 
 
+        public bool alteraBanda(Banda b, int idbanda)
+        {
+            MySqlCommand cmd = new MySqlCommand("sp_alteraBanda", conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("idbanda", idbanda);
+            cmd.Parameters.AddWithValue("nome", b.Nome);
+            cmd.Parameters.AddWithValue("integrantes", b.Integrantes);
+            cmd.Parameters.AddWithValue("ranking", b.Ranking);
+            cmd.Parameters.AddWithValue("genero", b.Genero);
+            try
+            {
+                conexao.Open();
+                cmd.ExecuteNonQuery(); // executa o comando
+                return true;
+            }
+            catch (MySqlException e)
+            {
+                mensagem = "Erro:" + e.Message;
+                return false;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }//fim alteraBanda
+
+        public bool insereGenero(string nomeGenero)
+        {
+            try
+            {
+                conexao.Open();
+                MySqlCommand cmd =
+                    new MySqlCommand("sp_insereGenero", conexao);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("nomeGenero", nomeGenero);
+                cmd.ExecuteNonQuery();//executar no banco
+                return true;
+            }
+            catch (MySqlException erro)
+            {
+                mensagem = erro.Message;
+                return false;
+            }
+
+        }// fim do insereGenero
+
+        public bool verifica(string user, string pass)
+        {
+            string senhaHash = BibliotecaHash.makeHash(pass);
+            MySqlCommand cmd = new MySqlCommand("sp_consultaLogin", conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("usuario", user);
+            cmd.Parameters.AddWithValue("senha", senhaHash);
+            try
+            {
+                conexao.Open();//abrindo conexão
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                DataSet ds = new DataSet();//tabela virtual
+                da.Fill(ds); //passando os valores consultados para o dataset
+                if (ds.Tables[0].Rows.Count > 0) // verifica se retornou algum registro
+                    return true;
+                else
+                    return false;
+            }
+            catch (MySqlException e)
+            {
+                mensagem = "Erro:" + e.Message;
+                return false;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }//fim verifica
+
+
 
     }//fim classe
 }
