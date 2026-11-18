@@ -32,9 +32,9 @@
             btnFechar = new Button();
             pictureBox1 = new PictureBox();
             lblUsuario = new Label();
-            txtUsuario = new TextBox();
+            txtUserLogin = new TextBox();
             lblSenha = new Label();
-            txtSenha = new TextBox();
+            txtSenhaLogin = new TextBox();
             btnEntrar = new Button();
             pictureBox2 = new PictureBox();
             pnlTopo.SuspendLayout();
@@ -90,13 +90,13 @@
             lblUsuario.Text = "Usuário:";
             lblUsuario.Click += lblUsuario_Click;
             // 
-            // txtUsuario
+            // txtUserLogin
             // 
-            txtUsuario.Font = new Font("Segoe UI", 11F);
-            txtUsuario.Location = new Point(170, 253);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(180, 27);
-            txtUsuario.TabIndex = 2;
+            txtUserLogin.Font = new Font("Segoe UI", 11F);
+            txtUserLogin.Location = new Point(170, 253);
+            txtUserLogin.Name = "txtUserLogin";
+            txtUserLogin.Size = new Size(180, 27);
+            txtUserLogin.TabIndex = 2;
             // 
             // lblSenha
             // 
@@ -109,14 +109,14 @@
             lblSenha.TabIndex = 3;
             lblSenha.Text = "Senha:";
             // 
-            // txtSenha
+            // txtSenhaLogin
             // 
-            txtSenha.Font = new Font("Segoe UI", 11F);
-            txtSenha.Location = new Point(170, 297);
-            txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(180, 27);
-            txtSenha.TabIndex = 4;
-            txtSenha.UseSystemPasswordChar = true;
+            txtSenhaLogin.Font = new Font("Segoe UI", 11F);
+            txtSenhaLogin.Location = new Point(170, 297);
+            txtSenhaLogin.Name = "txtSenhaLogin";
+            txtSenhaLogin.Size = new Size(180, 27);
+            txtSenhaLogin.TabIndex = 4;
+            txtSenhaLogin.UseSystemPasswordChar = true;
             // 
             // btnEntrar
             // 
@@ -135,7 +135,7 @@
             btnEntrar.Text = "Entrar";
             btnEntrar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEntrar.UseVisualStyleBackColor = true;
-            btnEntrar.Click += btnEntrar_Click;
+            btnEntrar.Click += btnLogin_Click;
             // 
             // pictureBox2
             // 
@@ -156,9 +156,9 @@
             ClientSize = new Size(450, 550);
             Controls.Add(pictureBox2);
             Controls.Add(btnEntrar);
-            Controls.Add(txtSenha);
+            Controls.Add(txtSenhaLogin);
             Controls.Add(lblSenha);
-            Controls.Add(txtUsuario);
+            Controls.Add(txtUserLogin);
             Controls.Add(lblUsuario);
             Controls.Add(pnlTopo);
             ForeColor = Color.FromArgb(229, 229, 229);
@@ -179,9 +179,9 @@
         private PictureBox pictureBox1;
         private Button btnFechar;
         private Label lblUsuario;
-        private TextBox txtUsuario;
+        private TextBox txtUserLogin;
         private Label lblSenha;
-        private TextBox txtSenha;
+        private TextBox txtSenhaLogin;
         private Button btnEntrar;
         private PictureBox pictureBox2;
     }

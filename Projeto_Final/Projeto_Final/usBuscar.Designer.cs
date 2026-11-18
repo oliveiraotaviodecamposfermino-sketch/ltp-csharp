@@ -33,21 +33,18 @@
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usBuscar));
             pnlTopo = new Panel();
-            pictureBoxImagemTopo = new PictureBox();
             lblTitulo = new Label();
             btnBuscar = new Button();
             dataGridView1 = new DataGridView();
             btnBuscarNome = new Button();
             btnAlterar = new Button();
             pnlTopo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxImagemTopo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // pnlTopo
             // 
             pnlTopo.BackColor = Color.FromArgb(38, 18, 53);
-            pnlTopo.Controls.Add(pictureBoxImagemTopo);
             pnlTopo.Controls.Add(lblTitulo);
             pnlTopo.Controls.Add(btnBuscar);
             pnlTopo.Dock = DockStyle.Top;
@@ -55,19 +52,6 @@
             pnlTopo.Name = "pnlTopo";
             pnlTopo.Size = new Size(1100, 80);
             pnlTopo.TabIndex = 0;
-            // 
-            // pictureBoxImagemTopo
-            // 
-            pictureBoxImagemTopo.BackColor = Color.Transparent;
-            pictureBoxImagemTopo.ErrorImage = null;
-            pictureBoxImagemTopo.Image = Properties.Resources.logo_removebg_preview1;
-            pictureBoxImagemTopo.Location = new Point(693, 3);
-            pictureBoxImagemTopo.Name = "pictureBoxImagemTopo";
-            pictureBoxImagemTopo.Size = new Size(220, 70);
-            pictureBoxImagemTopo.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxImagemTopo.TabIndex = 2;
-            pictureBoxImagemTopo.TabStop = false;
-            pictureBoxImagemTopo.Click += pictureBoxImagemTopo_Click;
             // 
             // lblTitulo
             // 
@@ -164,6 +148,7 @@
             btnAlterar.FlatAppearance.MouseDownBackColor = Color.FromArgb(55, 35, 75);
             btnAlterar.FlatAppearance.MouseOverBackColor = Color.FromArgb(55, 35, 75);
             btnAlterar.FlatStyle = FlatStyle.Flat;
+            btnAlterar.Image = Properties.Resources.alterar_branco_40;
             btnAlterar.Location = new Point(134, 114);
             btnAlterar.Name = "btnAlterar";
             btnAlterar.Size = new Size(64, 64);
@@ -184,7 +169,6 @@
             Size = new Size(1100, 650);
             Load += usBuscar_Load;
             pnlTopo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBoxImagemTopo).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -193,7 +177,6 @@
 
         private Panel pnlTopo;
         private Label lblTitulo;
-        private PictureBox pictureBoxImagemTopo;
         private Button btnBuscar;
         private DataGridView dataGridView1;
         private Button btnBuscarNome;

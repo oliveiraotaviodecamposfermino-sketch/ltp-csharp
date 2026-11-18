@@ -25,25 +25,21 @@ namespace Projeto_Final
 
         }
 
-        private void btnEntrar_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            string usuario = txtUsuario.Text;  
-            string senha = txtSenha.Text;
-
-            if(usuario == "adm" && senha == "123")
+            ConectaBanco conecta = new ConectaBanco();
+            if (conecta.verifica(txtUserLogin.Text, txtSenhaLogin.Text) == true)
             {
-                Form1 formPrincipal = new Form1();
+                Form1 formSistema = new Form1();
                 this.Hide();
-                formPrincipal.ShowDialog();
+                formSistema.ShowDialog();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Usuário ou senha incorretos!", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtSenha.Clear();
-                txtSenha.Focus();
+                MessageBox.Show("Usuário ou senha incorretos!" + conecta.mensagem);
             }
         }
-     }
- }
+    }
+}
 
