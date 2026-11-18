@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace Projeto_Final
 {
-    public partial class usCadastro : UserControl
+    public partial class frmAdicionarGenero : Form
     {
-        public usCadastro()
+        public frmAdicionarGenero()
         {
             InitializeComponent();
+        }
+
+        private void btnFecharGenero_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
