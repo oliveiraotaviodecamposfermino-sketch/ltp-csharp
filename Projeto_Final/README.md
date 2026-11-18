@@ -4,7 +4,7 @@ Sistema elaborado como projeto final para a disciplina de LTP1 do professor Mate
 
 ## Tela de Login
 
-![Tela de Login](![Tela de Login](./print/login.png))
+![Tela de Login](./print/login.png)
 
 ## Tela de Cadastro
 
