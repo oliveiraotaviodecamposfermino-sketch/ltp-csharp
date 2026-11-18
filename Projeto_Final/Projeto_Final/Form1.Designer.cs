@@ -188,7 +188,7 @@
             tabTelas.Controls.Add(tabBuscar);
             tabTelas.Controls.Add(tabAlterar);
             tabTelas.Dock = DockStyle.Fill;
-            tabTelas.ItemSize = new Size(50, 20);
+            tabTelas.ItemSize = new Size(0, 1);
             tabTelas.Location = new Point(0, 0);
             tabTelas.Name = "tabTelas";
             tabTelas.SelectedIndex = 0;
@@ -215,10 +215,10 @@
             tabCadastrar.Controls.Add(lblPlataforma);
             tabCadastrar.Controls.Add(txtNome);
             tabCadastrar.Controls.Add(lblNome);
-            tabCadastrar.Location = new Point(4, 24);
+            tabCadastrar.Location = new Point(4, 5);
             tabCadastrar.Name = "tabCadastrar";
             tabCadastrar.Padding = new Padding(3);
-            tabCadastrar.Size = new Size(1092, 512);
+            tabCadastrar.Size = new Size(1092, 531);
             tabCadastrar.TabIndex = 0;
             tabCadastrar.Text = "Cadastrar";
             tabCadastrar.Click += tabCadastrar_Click;
