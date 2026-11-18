@@ -4,13 +4,13 @@ Sistema elaborado como projeto final para a disciplina de LTP1 do professor Mate
 
 ## Tela de Login
 
-![Tela de Login](print/tela_login.png)
+![Tela de Login](![Tela de Login](./print/login.png))
 
 ## Tela de Cadastro
 
 Permite inserir os dados dos jogos, tela a parte para os gêneros.
 
-![Tela de Cadastro](print/cadastro.png)
+![Tela de Cadastro](./print/cadastro.png)
 ![Tela de Cadastro](print/generos.png)
 
 ## Listagem de Jogos
