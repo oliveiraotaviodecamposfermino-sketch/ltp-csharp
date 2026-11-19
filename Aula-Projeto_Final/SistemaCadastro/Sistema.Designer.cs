@@ -208,7 +208,7 @@
             this.tabCadastrar.Controls.Add(this.label4);
             this.tabCadastrar.Location = new System.Drawing.Point(4, 26);
             this.tabCadastrar.Name = "tabCadastrar";
-            this.tabCadastrar.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabCadastrar.Padding = new System.Windows.Forms.Padding(3);
             this.tabCadastrar.Size = new System.Drawing.Size(664, 248);
             this.tabCadastrar.TabIndex = 0;
             this.tabCadastrar.Text = "Cadastrar";
@@ -236,7 +236,7 @@
             this.cbGenero.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cbGenero.FormattingEnabled = true;
             this.cbGenero.Location = new System.Drawing.Point(132, 53);
-            this.cbGenero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbGenero.Margin = new System.Windows.Forms.Padding(2);
             this.cbGenero.Name = "cbGenero";
             this.cbGenero.Size = new System.Drawing.Size(480, 29);
             this.cbGenero.TabIndex = 10;
@@ -245,7 +245,7 @@
             // 
             this.txtranking.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtranking.Location = new System.Drawing.Point(132, 131);
-            this.txtranking.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtranking.Margin = new System.Windows.Forms.Padding(2);
             this.txtranking.Name = "txtranking";
             this.txtranking.Size = new System.Drawing.Size(480, 27);
             this.txtranking.TabIndex = 12;
@@ -338,7 +338,7 @@
             this.tabBuscar.Controls.Add(this.dgBandas);
             this.tabBuscar.Location = new System.Drawing.Point(4, 26);
             this.tabBuscar.Name = "tabBuscar";
-            this.tabBuscar.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabBuscar.Padding = new System.Windows.Forms.Padding(3);
             this.tabBuscar.Size = new System.Drawing.Size(664, 248);
             this.tabBuscar.TabIndex = 1;
             this.tabBuscar.Text = "Buscar";
@@ -393,7 +393,7 @@
             // 
             this.txtBusca.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtBusca.Location = new System.Drawing.Point(82, 10);
-            this.txtBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBusca.Margin = new System.Windows.Forms.Padding(2);
             this.txtBusca.Name = "txtBusca";
             this.txtBusca.Size = new System.Drawing.Size(261, 27);
             this.txtBusca.TabIndex = 1;
@@ -405,7 +405,7 @@
             this.dgBandas.BackgroundColor = System.Drawing.Color.White;
             this.dgBandas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgBandas.Location = new System.Drawing.Point(42, 55);
-            this.dgBandas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgBandas.Margin = new System.Windows.Forms.Padding(2);
             this.dgBandas.Name = "dgBandas";
             this.dgBandas.ReadOnly = true;
             this.dgBandas.RowHeadersWidth = 51;
@@ -425,9 +425,9 @@
             this.tabAlterar.Controls.Add(this.label10);
             this.tabAlterar.Controls.Add(this.btnConfirmaAlteracao);
             this.tabAlterar.Location = new System.Drawing.Point(4, 26);
-            this.tabAlterar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAlterar.Margin = new System.Windows.Forms.Padding(2);
             this.tabAlterar.Name = "tabAlterar";
-            this.tabAlterar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabAlterar.Padding = new System.Windows.Forms.Padding(2);
             this.tabAlterar.Size = new System.Drawing.Size(664, 248);
             this.tabAlterar.TabIndex = 2;
             this.tabAlterar.Text = "Alterar";
@@ -439,7 +439,7 @@
             this.cbAlteraGenero.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cbAlteraGenero.FormattingEnabled = true;
             this.cbAlteraGenero.Location = new System.Drawing.Point(128, 61);
-            this.cbAlteraGenero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAlteraGenero.Margin = new System.Windows.Forms.Padding(2);
             this.cbAlteraGenero.Name = "cbAlteraGenero";
             this.cbAlteraGenero.Size = new System.Drawing.Size(480, 29);
             this.cbAlteraGenero.TabIndex = 23;
@@ -448,7 +448,7 @@
             // 
             this.txtAlteraRanking.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtAlteraRanking.Location = new System.Drawing.Point(128, 144);
-            this.txtAlteraRanking.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAlteraRanking.Margin = new System.Windows.Forms.Padding(2);
             this.txtAlteraRanking.Name = "txtAlteraRanking";
             this.txtAlteraRanking.Size = new System.Drawing.Size(480, 27);
             this.txtAlteraRanking.TabIndex = 20;

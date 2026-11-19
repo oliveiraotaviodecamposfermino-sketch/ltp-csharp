@@ -41,12 +41,6 @@ namespace SistemaCadastro
             tabControl1.SelectedTab = tabControl1.TabPages[1];
         }
 
-
-
-
-
-
-
         private void Sistema_Load(object sender, EventArgs e)
         {
             listaCBGeneros();
