@@ -1,4 +1,4 @@
-﻿namespace Lista_de_Exercício_03
+﻿namespace Lista_de_Exercícios_03
 {
     internal class Banda
     {
